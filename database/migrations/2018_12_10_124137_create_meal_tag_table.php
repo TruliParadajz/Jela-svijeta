@@ -31,6 +31,8 @@ class CreateMealTagTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('meal_tag');
+        Schema::table('meal_tag', function (Blueprint $table) {
+            Schema::dropIfExists('meal_tag');
+        });
     }
 }

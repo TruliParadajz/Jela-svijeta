@@ -28,7 +28,7 @@ class IngredientMealTableSeeder extends Seeder
                     'meal_id' => $meal,
                     'ingredient_id' => $faker->randomElement($ingredientIds)                          
                 ]);
-            }            
+            }           
         }
     }
 }

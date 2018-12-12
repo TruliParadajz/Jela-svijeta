@@ -29,6 +29,7 @@ class TagsTableSeeder extends Seeder
                 'created_at' => new DateTime,
                 'updated_at' => new DateTime
             ];
+            $title = $faker->word();
         }
         DB::table('tags')->insert($tags);
     }

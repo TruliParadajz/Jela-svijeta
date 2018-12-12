@@ -28,7 +28,8 @@ class MealTagTableSeeder extends Seeder
                     'meal_id' => $meal,
                     'tag_id' => $faker->randomElement($tagIds)                          
                 ]);
-            }            
+            }
+                    
         }
     }
 }
