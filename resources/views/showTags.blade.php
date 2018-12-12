@@ -44,10 +44,8 @@
                                 @endif
                             @endforeach   
                         @endforeach
-                    <br>&emsp;&emsp;],  
-                    
+                    <br>&emsp;&emsp;],                     
                     <br>&emsp;}
-
                     @endif
                 @endforeach
             @endforeach
