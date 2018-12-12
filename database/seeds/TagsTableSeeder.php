@@ -22,7 +22,7 @@ class TagsTableSeeder extends Seeder
         //generate dummy categories
         for($i = 1; $i <= 10; $i ++)
         {
-            $title = $faker->word();
+            $title = $faker->unique()->word();
             $tags[] = [
                 'title' => $title,
                 'slug' => Str::slug($title, '-'),

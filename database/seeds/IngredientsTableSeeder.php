@@ -21,7 +21,7 @@ class IngredientsTableSeeder extends Seeder
         //generate dummy categories
         for($i = 1; $i <= 20; $i ++)
         {
-            $title = $faker->word();
+            $title = $faker->unique()->word();
             $ingredients[] = [
                 'title' => $title,
                 'slug' => Str::slug($title, '-'),

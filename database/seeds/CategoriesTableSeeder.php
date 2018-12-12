@@ -19,9 +19,9 @@ class CategoriesTableSeeder extends Seeder
         DB::table('categories')->truncate();
 
         //generate dummy categories
-        for($i = 1; $i <= 7; $i ++)
+        for($i = 1; $i <= 10; $i ++)
         {
-            $title = $faker->word();
+            $title = $faker->unique()->word();
             $categories[] = [
                 'title' => $title,
                 'slug' => Str::slug($title, '-'),
