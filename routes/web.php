@@ -30,5 +30,8 @@ Route::get('admin/posts/example', array('as' => 'admin.home', function(){
 
 //Route::get('/meals', 'MealsController@meal');
 
-Route::get('/{per_page?}&{page?}&{category?}&{tags?}&{with?}&{diff_time?}', 'RequestsController@getThose');
+Route::get('/page/{per_page}/{page}', 'ShowTargetedController@getThose');
 Route::get('/', 'ShowAllController@showAll');
+Route::get('/category/{categoryNum}', 'ShowPerCategory@getCategory');
+Route::get('/tag/{tagNum}', 'ShowPerTagController@getTag');
+//&{category}&{tags}&{with}&{diff_time?}
